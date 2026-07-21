@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luyện tập phân tích đa thức thành nhân tử</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧩 Phân tích đa thức thành nhân tử</h1>
+    <p class="subtitle">Nhập đáp án (dùng ^ cho số mũ, * cho nhân, hoặc viết liền)</p>
+
+    <div class="question-box">
+      <span class="q-label">📐</span>
+      <span id="question">Đang tải...</span>
+    </div>
+
+    <div class="input-area">
+      <div class="input-row">
+        <input type="text" id="user-input" placeholder="Nhập đáp án của bạn..." autofocus />
+        <button class="btn btn-primary" id="check-btn">Kiểm tra</button>
+        <button class="btn btn-success" id="next-btn" style="display:none;">Câu tiếp ▶</button>
+      </div>
+
+      <div class="preview-box">
+        <span class="preview-label">🔎 Xem trước:</span>
+        <span id="preview-text"><i>Chưa nhập gì...</i></span>
+      </div>
+    </div>
+
+    <div class="kbd-row">
+      <button class="kbd-btn" data-char="^">^</button>
+      <button class="kbd-btn" data-char="*">*</button>
+      <button class="kbd-btn" data-char="(">(</button>
+      <button class="kbd-btn" data-char=")">)</button>
+      <button class="kbd-btn" data-char="+">+</button>
+      <button class="kbd-btn" data-char="-">−</button>
+      <button class="kbd-btn" data-char="x">x</button>
+      <button class="kbd-btn" data-char="y">y</button>
+      <button class="kbd-btn" data-char="z">z</button>
+      <button class="kbd-btn" data-char="a">a</button>
+      <button class="kbd-btn" data-char="b">b</button>
+      <button class="kbd-btn" data-char="c">c</button>
+      <button class="kbd-btn" data-char=" ">␣</button>
+      <button class="kbd-btn" id="clear-btn">⌫</button>
+    </div>
+
+    <div class="stats">
+      <div class="stats-text" id="stats">📊 Số câu đúng: 0/0 (0%)</div>
+      <div class="action-btns">
+        <button class="btn btn-danger" id="reset-btn">🔄 Làm lại</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/algebra.js/0.2.6/algebra.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
