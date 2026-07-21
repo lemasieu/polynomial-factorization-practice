@@ -99,15 +99,15 @@ python -m http.server
 
 ## 🤝 Contributing
 Contributions are welcome! You can:
-Report bugs via Issues
-Fork and create Pull Requests to improve the code
-Suggest new problem types
+- Report bugs via Issues
+- Fork and create Pull Requests to improve the code
+- Suggest new problem types
 
 ---
 
 ## 📜 License
-MIT License – Feel free to use, modify, and distribute.
-Created by Deepseek and Gemini with my idea.
+- MIT License – Feel free to use, modify, and distribute.
+- Created by Deepseek with my idea.
 
 ---
 
